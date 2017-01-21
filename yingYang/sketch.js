@@ -1,9 +1,12 @@
 function setup() {
   createCanvas(500, 500); // Width and height of canvas
+  smooth(); // What does this do?
   //strokeWeight(2);
 }
 
 function draw() {
+  background(255); // Background color
+  translate(mouseX, mouseY);
 
   noStroke();
 
