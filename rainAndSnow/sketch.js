@@ -17,7 +17,7 @@ var page = 0; // sets page to be displayed
 
 function setup() {
   createCanvas(windowWidth, windowHeight); // makes canvas size of window
-  textFont("Work Sans"); 
+  textFont("Work Sans");
 
   // makes all the snowflakes snowflakes
   for (var i = 0; i < 100; i++) {
@@ -133,12 +133,16 @@ function draw() {
       }
     }
   }
+
   if (mouseIsPressed && mouseX < (width / 2) + 50 && mouseX > (width / 2) - 50 && mouseY < (height - 60) && mouseY > (height - 90)) { // pressed while over button
     buttonNoHover();
+    textTop();
   } else if (mouseX < (width / 2) + 50 && mouseX > (width / 2) - 50 && mouseY < (height - 60) && mouseY > (height - 90)) { // over button not pressed
     buttonHover();
+    textTop();
   } else { // fill color when mouse isn't on button
     buttonNoHover();
+    textTop();
   }
 }
 
@@ -172,6 +176,16 @@ function textForButton() {
   textSize(30); // big text size
   textAlign(CENTER, CENTER); // uses center of text for positioning
   text("Switch", width / 2, height - 75); // sets text in button
+
+}
+
+// top text
+function textTop() {
+  textAlign(CENTER); // text at center
+  textSize(16); // text size
+  noStroke(); 
+  fill(175, 175, 175); // text 
+  text("press right or left arrow keys", width / 2, 75); // text that will show up
 }
 
 // changes page between rain and snow
