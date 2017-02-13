@@ -3,7 +3,7 @@ Created by Tess Wolfe-Stelzer
 Last edited 2/11/17
 This program creates two arrays of both rain and snowflake objects.
 The objects are varied in size and move at varied speeds. The direction
-of rain and snow snow is controlled by the L and R arrow keys and clickng
+of rain and snow is controlled by the L and R arrow keys; clicking
 the mouse switches between rain and snow. The object structure was inspired
 by Daniel Shiffman lecture 6.3, Array of Objects*/
 
@@ -17,6 +17,7 @@ var page = 0; // sets page to be displayed
 
 function setup() {
   createCanvas(windowWidth, windowHeight); // makes canvas size of window
+  textFont("Work Sans"); 
 
   // makes all the snowflakes snowflakes
   for (var i = 0; i < 100; i++) {
@@ -55,7 +56,7 @@ function setup() {
     }
   }
 
-  // makes the raindrops
+  // makes the raindrops 
   for (var j = 0; j < 100; j++) {
     rain[j] = {
       x: random(0, width), // position x is random value between 0–width of screen
@@ -89,7 +90,6 @@ function setup() {
         }
         this.y = (this.y + this.speed) % height; // moves down; hits bottow and starts at top
       },
-
     }
   }
 }
@@ -97,6 +97,7 @@ function setup() {
 function draw() {
   // frameRate(20); future iteration option: slow frame rate in object to make rain look like meteors
   background(0);
+
   if (page == 0) { // page 0 is rain page
     for (i = 10; i < windowWidth; i++) { // creates gradient behind drops
       stroke(i * .2); // black top, gray bottom. Larger multiple shrinks gradient (white on bottom)
@@ -132,9 +133,50 @@ function draw() {
       }
     }
   }
+  if (mouseIsPressed && mouseX < (width / 2) + 50 && mouseX > (width / 2) - 50 && mouseY < (height - 60) && mouseY > (height - 90)) { // pressed while over button
+    buttonNoHover();
+  } else if (mouseX < (width / 2) + 50 && mouseX > (width / 2) - 50 && mouseY < (height - 60) && mouseY > (height - 90)) { // over button not pressed
+    buttonHover();
+  } else { // fill color when mouse isn't on button
+    buttonNoHover();
+  }
+}
+
+// draws button
+function button() {
+  noFill();
+  rectMode(RADIUS)
+  strokeWeight(3);
+  rect(width / 2, height - 75, 100, 30); // button at center bottom
+}
+
+// modifies button for non-hover state
+function buttonNoHover() {
+  stroke(255);
+  button();
+  fill(255); // text fill
+  textForButton();
+}
+
+// modifies button for hover state
+function buttonHover() {
+  stroke(244, 221, 8);
+  button();
+  fill(244, 221, 8);
+  textForButton();
+}
+
+// draws text
+function textForButton() {
+  noStroke();
+  textSize(30); // big text size
+  textAlign(CENTER, CENTER); // uses center of text for positioning
+  text("Switch", width / 2, height - 75); // sets text in button
 }
 
 // changes page between rain and snow
 function mousePressed() {
-  page = 1 - page;
+  if (mouseX < (width / 2) + 50 && mouseX > (width / 2) - 50 && mouseY < (height - 60) && mouseY > (height - 90)) { // checks if mouse is within buttom dimensions
+    page = 1 - page; // switches pages
+  }
 }
