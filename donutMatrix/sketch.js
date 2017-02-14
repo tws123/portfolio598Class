@@ -31,7 +31,7 @@ function draw() {
   directionalLight(0, 0, 200, 0.1, 1, 0, sin(light)); // (green, blue, opacity, x, y, z)
 
   translate(-325, -155, 0); // moves object from default center to corner
-  if (page == 0) {
+  if (page == 5) {
     for (i = 0; i < 5; i++) { // draws torus along x
       for (j = 0; j < 3; j++) { // draws torus along y
         push(); // new shift per each torus
@@ -43,7 +43,7 @@ function draw() {
         pop(); // resets translation
       }
     }
-  } else if (page == 1) {
+  } else if (page == 4) {
     for (i = 0; i < 5; i++) { // draws torus along x
       for (j = 0; j < 3; j++) { // draws torus along y
         push(); // new shift per torus
@@ -55,7 +55,7 @@ function draw() {
         pop(); // resets translation
       }
     }
-  } else if (page == 2) {
+  } else if (page == 3) {
     for (i = 0; i < 5; i++) { // draws torus along x
       for (j = 0; j < 3; j++) { // draws torus along y
         push(); // new shift per torus
@@ -69,14 +69,15 @@ function draw() {
         pop(); // resets translation
       }
     }
-  } else if (page == 3) {
+  } else if (page == 2) {
     translate(+325, +155, 0); // moves objects back from top/L starting point to default center
     rotateX(frameCount * 0.01); // rotates exterior torus along x
     torus(donutSize * 3.5, (donutSize * 3.5) / 3.5); // draws largest torus (radius, size of hole)
     rotateY(frameCount * 0.01); // rotates torus along x axis
     torus(donutSize * 1.8, (donutSize * 1.8) / 2.8); // draws smaller torus (radius, size of hole)
     sphere(donutSize); // draws sphere in torus
-  } else if (page == 4) {
+ 
+  } else if (page == 1) {
     for (i = 0; i < 5; i++) { // torus along x
       for (j = 0; j < 3; j++) { // torus along y
         translate(+325, +155, 0); // moves starting objects back from top/L starting point to default center
@@ -84,7 +85,7 @@ function draw() {
         torus(donutSize, donutSize / 2); // draws torus (radius, size of hole)
       }
     }
-  } else if (page == 5) {
+  } else if (page == 0) {
     for (i = 0; i < 5; i++) { // sphere along x
       for (j = 0; j < 3; j++) { // sphere along y
         translate(+325, +155, 0); // moves starting point back to center 
