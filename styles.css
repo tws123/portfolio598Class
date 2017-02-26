@@ -1,1 +1,62 @@
+body {
+ font-family: 'Helvetica',  'Work Sans', sans-serif; 
+ background-color: #ececec;
+}
+h1 {
+ font-size: 46px;
+ font-weight: bold;
+ color: #6ea400;
+ padding: 5px;
+ margin: 0;
+ letter-spacing: 1.2
+}
 
+h2 {
+ font-size: 24px;
+ font-weight: bold;
+ color: #6ea400;
+ padding: 5px;
+ margin: 0;
+}
+
+p {
+ font-size: 16px;
+ font-weight: 300;
+ color: #888;
+}
+
+ul {
+   color: #888;
+ }
+
+ a:link, a:visited {
+ font-size: 16px;
+ color: #888; 
+ text-decoration: none;
+}
+
+ a:hover, a:active {
+ font-size: 16px;
+ color: #6ea400;
+ text-decoration: underline;
+ }
+ 
+header {
+ padding: 5px 0 5; /*top, r and l, bottom*/
+ border-bottom: 1px solid #888;
+ margin-bottom: 5px;
+}
+
+li {
+ line-height: 1.5
+ }
+ 
+.mainDiv {
+ background-color: white;
+ margin: auto;
+ margin-top: 5%;
+ margin-bottom: 5%;
+ padding: 75px 75px 75px; /*top, left and right bottom*/
+ width: 60%;
+ }
+ 
