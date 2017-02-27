@@ -3,7 +3,7 @@ body {
  background-color: #ececec;
 }
 h1 {
- font-size: 46px;
+ font-size: 40px;
  font-weight: 600;
  color: #6ea400;
  /*color:#888;*/
@@ -75,9 +75,11 @@ li {
   color: #888;
 }
 
-.pinkColor {
-  color:
+.orangeColor {
+  color: #6ea400;
 }
 
-
+.greenColor {
+ color: #6ea400;
+}
  
