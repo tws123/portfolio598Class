@@ -76,7 +76,7 @@ li {
 }
 
 .gradient {
- background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #00ffff 100% ) repeat;
+ background: -webkit-linear-gradient(360deg, rgba(232,254,255,1) 0%, rgba(241,250,222,1) 52%, rgba(222,255,227,1) 100%) repeat;
 }
 .grayColor {
   color: #888;
