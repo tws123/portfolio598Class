@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  background(225,200,41); // Background color (yellow)
+  background(255); // Background color (yellow)
   translate(mouseX, mouseY);
 
   noStroke();
