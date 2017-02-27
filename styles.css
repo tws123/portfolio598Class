@@ -73,6 +73,9 @@ li {
  width: 80%;	
 } 
 
+#widerText {
+ max-width: 1000px;
+}
 .grayColor {
   color: #888;
 }
