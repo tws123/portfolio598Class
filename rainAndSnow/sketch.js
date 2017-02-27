@@ -16,7 +16,7 @@ var page = 0; // sets page to be displayed
 
 
 function setup() {
-  createCanvas(850, 550); // makes canvas size of window
+  createCanvas(850, 400); // makes canvas size of window
   textFont("Work Sans");
 
   // makes all the snowflakes snowflakes
