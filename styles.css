@@ -61,12 +61,12 @@ li {
  }
 
 #putInBox {
-	background-color: white;
+ background-color: white;
  margin: auto;
  margin-top: 5%;
  margin-bottom: 5%;
  padding: 0px 0px 0px; /*top, left and right bottom*/
- width: 60%;	
+ width: 80%;	
 } 
 
 
