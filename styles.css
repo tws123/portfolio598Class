@@ -25,7 +25,7 @@ p {
  font-size: 16px;
  font-weight: 300;
  color: #888;
- max-width: 600px;
+ max-width: 800px;
 }
 
 ul {
@@ -46,8 +46,9 @@ ul {
  
 header {
  padding: 5px 0 5; /*top, r and l, bottom*/
- border-bottom: 1px solid #888;
+ border-bottom: 2px solid #999;
  margin-bottom: 5px;
+ max-width: 800px;
 }
 
 li {
