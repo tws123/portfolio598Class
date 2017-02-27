@@ -143,7 +143,7 @@ function textBottom() {
   textAlign(CENTER); // text at center
   textSize(18); // text size
   noStroke();
-  fill(80, 100, 100, (opac * 2)); // text 
+  fill(80, 100, 100, (opac * 2.5)); // text 
   text("click mouse to change data", width / 2, height - 40); // text that will show up
 }
 
@@ -261,5 +261,5 @@ function mapOther() {
 // changes page with mouse click
 function mousePressed() {
   //page = 1 - page;
-  page = (page + 1) % 6; //get next photo
+  page = (page + 1) % 6; // cycles through pages
 }
