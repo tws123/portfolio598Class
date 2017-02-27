@@ -128,7 +128,7 @@ function textTop(x) {
   noStroke();
   rectMode(CENTER);
   fill(20, 20, 20, (opac / 2))
-  rect(width / 2, 40, width / 1.5, 40)
+  rect(width / 2, 40, width / 1.75, 40)
   textAlign(CENTER); // text at center
   textSize(26); // text size
   noStroke();
