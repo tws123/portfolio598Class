@@ -143,7 +143,7 @@ function textBottom() {
   textAlign(CENTER); // text at center
   textSize(18); // text size
   noStroke();
-  fill(80, 100, 100, (opac * 2.5)); // text 
+  fill(80, 100, 100, (opac * 3)); // text 
   text("click mouse to change data", width / 2, height - 40); // text that will show up
 }
 
