@@ -1,12 +1,13 @@
 body {
- font-family: 'Helvetica',  'Work Sans', sans-serif; 
+ /*font-family: 'Helvetica',  'Work Sans', sans-serif;*/ 
+ font-family: 'courier_newregular';
  background-color: #ececec;
 }
 h1 {
  font-size: 46px;
  font-weight: 600;
- /*color: #6ea400;*/
- color:#888;
+ color: #6ea400;
+ /*color:#888;*/
  padding: 5px;
  margin: 0;
  letter-spacing: 1.2
@@ -15,7 +16,8 @@ h1 {
 h2 {
  font-size: 24px;
  font-weight: 600;
- color: #888;
+ color: #6ea400;
+ /*color: #888;*/
  padding: 5px;
  margin: 0;
 }
@@ -69,6 +71,14 @@ li {
  padding: 0px 0px 0px; /*top, left and right bottom*/
  width: 80%;	
 } 
+
+.grayColor{
+  color: #888;
+}
+
+.pinkColor {
+  color:
+}
 
 
  
