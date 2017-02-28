@@ -2,7 +2,7 @@
 the robot by masking it with another color so that only the most recent
 drawing is visible. At least I think that's what's happening.
 */function setup() {
-  createCanvas(720, 480); // Width and height of canvas
+  createCanvas(850, 480); // Width and height of canvas
   smooth(); // What does this do?
   strokeWeight(2);
 }
