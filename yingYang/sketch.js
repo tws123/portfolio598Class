@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(500, 500); // Width and height of canvas
+  createCanvas(1000, 500); // Width and height of canvas
   smooth(); // What does this do?
   //strokeWeight(2);
 }

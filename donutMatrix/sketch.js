@@ -100,7 +100,7 @@ function draw() {
 // changes page with mouse click
 function mousePressed() {
   //page = 1 - page;
-  page = (page + 1) % 6; //get next photo
+  page = (page + 1) % 6; //get next page
 }
 
 // // top text. No 2D text available w/ WEBGL at this time

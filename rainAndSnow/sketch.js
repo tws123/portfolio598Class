@@ -16,8 +16,9 @@ var page = 0; // sets page to be displayed
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight); // makes canvas size of window
   textFont("Work Sans");
+  createCanvas(windowWidth, windowHeight); // makes canvas size of window
+
 
   // makes all the snowflakes snowflakes
   for (var i = 0; i < 100; i++) {
@@ -183,7 +184,7 @@ function textForButton() {
 function textTop() {
   textAlign(CENTER); // text at center
   textSize(16); // text size
-  noStroke(); 
+  noStroke();
   fill(175, 175, 175); // text 
   text("press right or left arrow keys", width / 2, 75); // text that will show up
 }

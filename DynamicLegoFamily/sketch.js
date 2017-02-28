@@ -1,9 +1,11 @@
 /* 
-1/21/17 Tess Wolfe-Stelzer
+Created byTess Wolfe-Stelzer
+Last edited 1/30/17 
 Inspired by Lego Imagine ad campaign
 http://adsoftheworld.com/campaign/lego-jung-von-matt-03-2012
 This program has four star wars-themed lego figures that move
 around and off the screen, until only yoda remains.*/
+
 var time1 = 6000; // sets a time frame
 var time2 = 13000; // sets second time frame
 var time3 = 14000; // sets third time frame
@@ -33,6 +35,7 @@ var yDirChew = 1; // y direction Chewy
 function setup() {
   createCanvas(1000, 700); // establishes canvas size
 }
+
 //runs in loop
 function draw() {
   var currentTime = millis(); // makes counter variable

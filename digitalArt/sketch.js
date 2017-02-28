@@ -2,7 +2,7 @@
 digital artwork inspired by Miro's Constellation series. All coding
 original (which is probably evident in how uninformed it's structure
 is), though all for statements were adapted from the p5js.org Examples
-page https://p5js.org/examples/*/
+page https://p5js.org/examples/ */
 
 function setup() {
 
@@ -22,7 +22,6 @@ function setup() {
   line(95, 120, 95, 300); // Vert line above triangle
 
   // Line Stars
-  stroke(0); // Stroke color
   strokeWeight(3);
   translate(400, 100); // Sets location of shape
   for (var i = 0; i < 10; i++) { // Top middle star
@@ -158,6 +157,4 @@ function setup() {
   fill(255); // White fill
   quad(300, 300, 450, 370, 450, 280, 300, 350); // Bowtie upper L
   quad(870, 555, 950, 600, 950, 550, 870, 595); // Bowtie lower R
-
-
 }

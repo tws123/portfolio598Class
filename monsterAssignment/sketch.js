@@ -25,16 +25,21 @@ function draw() {
 
   if (page == 0) {
     if (mouseX > 450) { // moves eyes and tail R if mouse R of center
-      eyeDirection = eyeDirection + 0.5; // moves R slowly
-      tailDirection = tailDirection + 5; // moves R more quickly
-      eyeDirection = min(eyeDirection, 11); // keeps pupils in eyes
-      tailDirection = min(tailDirection, 120) // keeps tail on page
+      // eyeDirection = eyeDirection + 0.5; // moves R slowly
+      // eyeDirection = min(eyeDirection, 11); // keeps pupils in eyes
+      eyeDirection = min (eyeDirection + 0.5, 11); // this code does what lines 28, 28 do together
+      // tailDirection = tailDirection + 5; // moves R more quickly
+      // tailDirection = min(tailDirection, 120) // keeps tail on page
+      tailDirection = min(tailDirection +5, 120); // this code does what lines 31, 32 do together
 
     } else { // moves eyes and tail L if mouse L of center
-      eyeDirection = eyeDirection - 0.5; // moves L slowly
-      eyeDirection = max(eyeDirection, -9); // keeps pupils in eyes
-      tailDirection = tailDirection - 5; // moves L quickly
-      tailDirection = max(tailDirection, -400); // keeps tail on page
+      // eyeDirection = eyeDirection - 0.5; // moves L slowly
+      // eyeDirection = max(eyeDirection, -9); // keeps pupils in eyes
+      eyeDirection = max(eyeDirection - 0.5, -9); // this code does what lines 36, 37 do together
+      // tailDirection = tailDirection - 5; // moves L quickly
+      // tailDirection = max(tailDirection, -400); // keeps tail on page
+      tailDirection = max(tailDirection - 5, -400); // this code does what lines 39, 40 do together
+
     }
   } else { // changes between jump and eye movement pages
     jumpValue = jumpValue - jumpDir // adds jumping
