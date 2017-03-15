@@ -30,13 +30,13 @@ var answers = ["I really enjoyed playing with 3D shapes using the WEBGL\nlibrary
 
 // preloads all the images
 function preload() {
-  img1 = loadImage('reflectionsimages/3Dimage.png');
-  img2 = loadImage('reflectionsimages/codingTogether.png');
-  img3 = loadImage('reflectionsimages/marilyn.png');
-  img4 = loadImage('reflectionsimages/friedaGrid.png');
-  img5 = loadImage('reflectionsimages/datavis.png');
-  img6 = loadImage('reflectionsimages/chuckItWireframes.png');
-  img7 = loadImage('reflectionsimages/monsterScreen.png');
+  img1 = loadImage('reflectionsImages/3Dimage.png');
+  img2 = loadImage('reflectionsImages/codingTogether.png');
+  img3 = loadImage('reflectionsImages/marilyn.png');
+  img4 = loadImage('reflectionsImages/friedaGrid.png');
+  img5 = loadImage('reflectionsImages/datavis.png');
+  img6 = loadImage('reflectionsImages/chuckItWireframes.png');
+  img7 = loadImage('reflectionsImages/monsterScreen.png');
 
   allImages = new Array(img1, img2, img3, img4, img5, img6, img7);
 
@@ -91,9 +91,9 @@ function draw() {
 
   } else if (page == 9) {
     push();
-    scale(1.25); // slightly larger picture
-    translate(0, -50); // moved up to cut of image text
-    mainImage(4, 2); // (index #, aspect ratio correction)
+    scale(.89); // slightly smaller picture
+    translate(+120, +80); // moved down and right
+    mainImage(4, 1.25); // (index #, aspect ratio correction)
     pop();
     textQuestions(4);
     textAnswers(4);
