@@ -10,6 +10,7 @@ ind = 0; // holds index for array
 var opacity = 86;
 var w = 130; // height button
 var h = 40; // width button
+var yPos = 260; // val to subtract from height for various functions.
 var marginTop = 150; // top margin
 var marginSides = 100; // used on L side
 var page = 0; // starting page
@@ -118,7 +119,7 @@ function draw() {
     textQuestions(6);
     textAnswers(6);
   }
-  button(width - marginSides - w, height - 200); // places button over images
+  button(width - marginSides - w, height - yPos); // places button over images
 }
 
 // main image on each page w/ tinting and opacity altered. 
@@ -144,7 +145,7 @@ function textAnswers(x) {
   noStroke(); // remove stroke from text
   fill(255); // title color
   textSize(16); // set text size
-  text(answers[x], marginSides, height - 220); // create title
+  text(answers[x], marginSides, height - yPos - 20); // create title
 
 }
 
@@ -172,7 +173,7 @@ function button(x, y) { //
 // switch pages w/ mouse press
 function mousePressed() { // button(width - marginSides - w, height/2);
   textAlign(CENTER, CENTER);
-  if (mouseX > (width - marginSides - w) - w / 2 && mouseX < (width - marginSides - w) + w / 2 && mouseY > (height - 200) - h / 2 && mouseY < (height - 200) + h / 2) { // checks if mouse is within buttom dimensions
+  if (mouseX > (width - marginSides - w) - w / 2 && mouseX < (width - marginSides - w) + w / 2 && mouseY > (height - yPos) - h / 2 && mouseY < (height - yPos) + h / 2) { // checks if mouse is within buttom dimensions
     page = (page + 1) % 14; //get next page
   }
 }
