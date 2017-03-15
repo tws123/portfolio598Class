@@ -20,13 +20,13 @@ var questions = ["What was the best\nthing you learned?", "What was your biggest
   "How are you planning to use\nwhat you learned in your future?",
   "If you could take the\nclass all over again knowing\nwhat you know now, what\nwould you do differently?"
 ]
-var answers = ["I really enjoyed playing with 3D shapes using the WEBGL\nlibrary. With only a rudimentary understanding of coding,\none can make pretty impressive-looking sketches.",
+var answers = ["I really enjoyed playing with 3D shapes using the WEBGL\nlibrary. With only a rudimentary understanding of coding,\none can make pretty impressive-looking sketches. While\n3D shapes were the most fun, for loops, else statements\nand arrays were the most useful.",
   "Coding can be anxiety-inducing for novices (like me) so I\nmade a concerted effort to help create a friendly, helpful,\nand collaborative environment by remaining positive and\nencouraging even when I was under a lot of stress.",
   "I'm PERSISTENT. Understanding coding syntax or logic isn't\neasy for me but I will work past the point of frustration into\nfeeling satisfaction with my achievements.",
-  "EVERYTHING. I will need to practice basic coding structures and functions\nregularly or I will forget it all. In particular, I need to practice objects and\narrays. I understand both a little but I don’t fully understand the extent of\ntheir capabilities, or the appropriate contexts for their use. Also, we never\ndid get to strings...",
-  "I would like to explore using programming within the context of Framer\nto increase the delight factor of animated prototypes. I'd also like to\ntry making more datavis projects.",
-  "Though, I’m now more equipped to understand developers'\noptions and constraints, converse with developer teams, an\nread basic programs and understand their logic, I suspect\nI will use programming most often with prototyping. ",
-  "If I were to take the class over again, I would\nprobably be less impulsive/creative in my choice\nof project topics and, instead, make an effort\nto create more professional portfolio pieces."
+  "EVERYTHING. I will need to practice basic coding structures and functions\nregularly or I will forget it all. In particular, I need to practice objects and\narrays. I understand both a little but I don’t fully understand the extent of\ntheir capabilities, or the appropriate contexts for their use. Also, I'm still a\nlittle foggy on when to use true and false booleans. We never did get\nto using strings so I'll want to explore using those.",
+  "I would like to explore using programming within the context of Framer\nto increase the delight factor of animated prototypes. I'd also like to try\nmaking more datavis projects.",
+  "Though, I’m now more equipped to understand developers'\noptions and constraints, converse with developer teams, and\nread basic programs and understand their logic, I suspect I\nwill use programming most often with prototyping. ",
+  "If I were to take the class over again, I would\nprobably be less impulsive/creative in my choice\nof project topics and, instead, make an effort to\ncreate more professional portfolio pieces."
 ]
 
 // preloads all the images
