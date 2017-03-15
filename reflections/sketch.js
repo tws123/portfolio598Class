@@ -12,7 +12,7 @@ var w = 130; // height button
 var h = 40; // width button
 var yPos = 310; // val to subtract from height for various functions.
 var marginTop = 150; // top margin
-var marginSides = 100; // used on L side
+var marginSides = 150; // used on L side
 var page = 0; // starting page
 var questions = ["What was the best\nthing you learned?", "What was your biggest\ncontribution to the class?",
   "What were your strengths?", "What do you think you\nneed more practice with?",
@@ -23,7 +23,7 @@ var questions = ["What was the best\nthing you learned?", "What was your biggest
 var answers = ["I really enjoyed playing with 3D shapes using the WEBGL\nlibrary. With only a rudimentary understanding of coding,\none can make pretty impressive-looking sketches. While\n3D shapes were the most fun, for loops, else statements\nand arrays were the most useful.",
   "Coding can be anxiety-inducing for novices (like me) so I\nmade a concerted effort to help create a friendly, helpful,\nand collaborative environment by remaining positive and\nencouraging even when I was under a lot of stress.",
   "I'm PERSISTENT. Understanding coding syntax or logic isn't\neasy for me but I will work past the point of frustration into\nfeeling satisfaction with my achievements.",
-  "EVERYTHING. I will need to practice basic coding structures and functions\nregularly or I will forget it all. In particular, I need to practice objects and\narrays. I understand both a little but I don’t fully understand the extent of\ntheir capabilities, or the appropriate contexts for their use. Also, I'm still a\nlittle foggy on when to use true and false booleans. We never did get\nto using strings so I'll want to explore using those.",
+  "EVERYTHING. I will need to practice basic coding structures and\nfunctions regularly or I will forget it all. In particular, I need to practice\nobjects and arrays. I understand both a little but I don’t fully\nunderstand the extent of their capabilities, or the appropriate contexts\nfor their use. Also, I'm still a little foggy on when to use true and\nfalse booleans. We never did get to using strings so I'll want to\nexplore using those.",
   "I would like to explore using programming within the context of Framer\nto increase the delight factor of animated prototypes. I'd also like to try\nmaking more datavis projects.",
   "Though, I’m now more equipped to understand developers'\noptions and constraints, converse with developer teams, and\nread basic programs and understand their logic, I suspect I\nwill use programming most often with prototyping. ",
   "If I were to take the class over again, I would\nprobably be less impulsive/creative in my choice\nof project topics and, instead, make an effort to\ncreate more professional portfolio pieces."
@@ -119,7 +119,7 @@ function draw() {
     textQuestions(6);
     textAnswers(6);
   }
-  button(width - marginSides - w, height - yPos); // places button over images
+  button(width - marginSides - w/2, height - yPos); // places button over images
 }
 
 // main image on each page w/ tinting and opacity altered. 
@@ -173,7 +173,7 @@ function button(x, y) { //
 // switch pages w/ mouse press
 function mousePressed() { // button(width - marginSides - w, height/2);
   textAlign(CENTER, CENTER);
-  if (mouseX > (width - marginSides - w) - w / 2 && mouseX < (width - marginSides - w) + w / 2 && mouseY > (height - yPos) - h / 2 && mouseY < (height - yPos) + h / 2) { // checks if mouse is within buttom dimensions
+  if (mouseX > (width - marginSides - w/2) - w / 2 && mouseX < (width - marginSides - w/2) + w / 2 && mouseY > (height - yPos) - h / 2 && mouseY < (height - yPos) + h / 2) { // checks if mouse is within buttom dimensions
     page = (page + 1) % 14; //get next page
   }
 }
